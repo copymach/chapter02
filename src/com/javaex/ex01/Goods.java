@@ -6,12 +6,16 @@ public class Goods {
 	private String name;
 	private int price;
 	
+	
+//	생성자
+	
+	
 //	메소드
 	public void getName (String n) {
 		name = n;
 	}
 	
-	public String getname() {
+	public String getName() {
 		return name;
 	}
 	
