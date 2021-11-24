@@ -22,7 +22,10 @@ public class PointApp {
 		System.out.println(p02.getX());
 		
 		
-//		Point p03 = new Point(3, 2);
+		Point p03 = new Point(55, 65);
+		p03.draw(true);
+		p03.draw(false);
+		p03.draw();
 		
 	}
 

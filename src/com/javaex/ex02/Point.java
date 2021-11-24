@@ -66,10 +66,35 @@ public class Point {
 	}	
 	
 	
+	
+//	this.getX() 메소드 재활용
+	public void draw() {
+		System.out.println("점 [x="+this.getX()+", y="+y+"]를 그렸습니다.");
+		
+	}
+	
+	
+	/* 원래 쓴 코드 혀 
 	public void draw() {
 		System.out.println("점 [x="+x+", y="+y+"]를 그렸습니다.");
 		
 	}
+	*/
+	
+	
+//	action true 그리는 기능, false 지우는기능
+	public void draw(boolean action) {
+		if (action == true) {
+			System.out.println("점 [x="+x+", y="+y+"]를 그렸습니다.");
+		} else if (action == false) {
+			System.out.println("점 [x="+x+", y="+y+"]를 지웠습니다.");
+		} else {
+			System.out.println("잘못된 입력입니다.");
+		}
+		
+	}
+	
+		
 		
 }
 
