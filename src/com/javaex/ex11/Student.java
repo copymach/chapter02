@@ -8,7 +8,7 @@ public class Student extends Person{
 //	private String name;
 //	private int age;
 //	person 에서 name age 상속 (가져온다) 
-	private String shoolName;
+	private String schoolName;
 
 	
 	
@@ -17,8 +17,8 @@ public class Student extends Person{
 		System.out.println("Student()");
 	}
 	
-	public Student(String shoolname) {
-		this.shoolName = shoolname;
+	public Student(String schoolName) {
+		this.schoolName = schoolName;
 		System.out.println("Student1");
 	}
 
@@ -40,7 +40,7 @@ public class Student extends Person{
 		
 		
 //		this 해당 필드의 학교이름
-		this.shoolName = schoolName;
+		this.schoolName = schoolName;
 		System.out.println("Student3");
 	}
 
@@ -48,14 +48,14 @@ public class Student extends Person{
 
 //	메소드 gs
 	
-	public String getShoolname() {
-		return shoolName;
+	public String getschoolName() {
+		return schoolName;
 	}
 
 
 
-	public void setShoolname(String shoolname) {
-		this.shoolName = shoolName;
+	public void setschoolName(String schoolName) {
+		this.schoolName = schoolName;
 	}
 
 
@@ -67,12 +67,20 @@ public class Student extends Person{
 	
 	@Override
 	public String toString() {
-		return "Student [shoolName=" + shoolName + "]";
+		return "Student [schoolName=" + schoolName + "]";
 	}
 	
 
-
-	
+//	부모쪽에 showInfo 가 있고 같은 이름이 자식쪽에도 있으면 자식쪽 사용
+	public void showInfo2() {
+		
+		System.out.println("=======================");
+		System.out.println("이름 :"+super.name);
+		System.out.println("나이 :"+age);
+		System.out.println("학교 :"+this.schoolName);
+		System.out.println("=======================");
+		
+	}
 	
 	
 

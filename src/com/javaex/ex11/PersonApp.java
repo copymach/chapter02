@@ -24,11 +24,11 @@ public class PersonApp {
 		Student s01 = new Student();
 		s01.setName("강호동");
 		s01.setAge(53);
-		s01.setShoolname("서울고교");
+		s01.setschoolName("서울고교");
 		
 		System.out.println(s01.getName());
 		System.out.println(s01.getAge());
-		System.out.println(s01.getShoolname());
+		System.out.println(s01.getschoolName());
 		
 		System.out.println(s01.toString());
 		
@@ -38,6 +38,8 @@ public class PersonApp {
 		Student s03 = new Student ("충북고교");
 		
 		
+		s02.showInfo();
+		s02.showInfo2();
 	}
 
 }

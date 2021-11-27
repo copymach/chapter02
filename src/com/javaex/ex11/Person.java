@@ -2,9 +2,9 @@ package com.javaex.ex11;
 
 public class Person {
 
-//	필드
+//	필드 Student에서 해당 필드 사용하기 위해 private 대신 protect을 사용 
 	protected String name;
-	private int age;
+	protected int age;
 
 	
 //	생성자 - 단축키 alt shift s 컨스트럭터
