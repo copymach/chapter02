@@ -10,13 +10,20 @@ public class Triangle extends Shape {
 	public Triangle() {	
 	}
 	
+	public Triangle(String lineColor, String fillColor, int width, int height) {
+		super(lineColor, fillColor);
+		this.width = width;
+		this.height = height;
+	}
+	
+	/*
 	public Triangle(String lineColor, String fillColor, int width, int height) {	
 		super.getLineColor();
 		super.getFillColor();
 		this.width = width;
 		this.height = height;
 	}
-	
+	*/
 	
 	
 	
@@ -40,7 +47,7 @@ public class Triangle extends Shape {
 	}
 	
 	
-	public void draw() {
+	public void drawT() {
 		System.out.println("선색:"+super.getLineColor()+" 면색:"+super.getFillColor()+" 가로:"+width+" 세로:"+height+" 삼각형이 만들어졌습니다.");
 	}
 	

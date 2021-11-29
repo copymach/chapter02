@@ -11,8 +11,13 @@ public class Circle extends Shape {
 	}
 	
 	public Circle(String lineColor, String fillColor, int width, int height) {	
+		super(lineColor, fillColor);
+		
+		/* 아래 코드를 썼더니 Shape에서 값을 못가져온다
 		super.getLineColor();
 		super.getFillColor();
+		*/
+		
 		this.width = width;
 		this.height = height;
 	}
@@ -41,7 +46,7 @@ public class Circle extends Shape {
 	
 	
 	
-	public void draw() {
+	public void drawC() {
 		System.out.println("선색:"+super.getLineColor()+" 면색:"+super.getFillColor()+" 가로:"+width+" 세로:"+height+" 원형이 만들어졌습니다.");
 	}
 	

@@ -31,7 +31,7 @@ public class ShapeApp {
 		
 //		배열을 순회하면서 출력
 		for (int i=0; i<rArray.length; i++) {
-			rArray[i].draw();
+			rArray[i].drawR();
 		}
 		
 		
@@ -47,8 +47,8 @@ public class ShapeApp {
 		tArray[2] = t03;
 		
 		
-		for (int i=0;i>tArray.length; i++) {
-			tArray[i].draw();
+		for (int i=0;i<tArray.length; i++) {
+			tArray[i].drawT();
 		}
 	
 		
@@ -65,9 +65,14 @@ public class ShapeApp {
 		cArray[2] = c03;
 		
 		
-		for (int i=0;i>cArray.length; i++) {
-			cArray[i].draw();
+		for (int i=0;i<cArray.length; i++) {
+			cArray[i].drawC();
 		}
+		
+		
+		char gul;
+		gul = '글';
+//		글 %uAE00
 		
 		
 		
