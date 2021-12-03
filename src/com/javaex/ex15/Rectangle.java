@@ -19,7 +19,6 @@ public class Rectangle extends Shape {
 		super(lineColor, fillColor);
 		this.width = width;
 		this.height = height;						
-		
 	}
 	
 	
